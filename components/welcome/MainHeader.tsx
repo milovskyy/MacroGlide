@@ -16,7 +16,9 @@ export const MainHeader = () => {
         </Link>
       </div>
       <WelcomeHeader />
-      <Button label="Get Early Access" />
+      <Link href={`/#waitlist`}>
+        <Button label="Get Early Access" />
+      </Link>
     </div>
   )
 }

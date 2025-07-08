@@ -27,7 +27,7 @@ export const WelcomeButtons = () => {
         onMouseEnter={() => setSelected(false)}
         onMouseLeave={() => setSelected(true)}
         className={cn(
-          'relative z-10 px-3 cursor-pointer',
+          'relative z-10 px-3 cursor-pointer text-sm flex items-center justify-center',
           !selected &&
             'bg-clip-text text-transparent border-[#70BEFA] bg-gradient-to-r from-[#FFFFFF] to-[#70BEFA]'
         )}
@@ -37,7 +37,7 @@ export const WelcomeButtons = () => {
       <div
         onClick={onClickList}
         className={cn(
-          'flex gap-3 justify-center items-center  cursor-pointer relative z-10'
+          'flex gap-3 justify-center items-center  cursor-pointer relative z-10 text-sm '
         )}
       >
         <TextGradient label="wait-list" />

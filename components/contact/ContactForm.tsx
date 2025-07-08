@@ -57,7 +57,7 @@ export const ContactForm = () => {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="text-white border-1 border-[#222222] py-4 px-[25px] focus:ring-[#70BEFA] focus:ring-1 focus:outline-none rounded-[5px]"
+          className="text-white border-1 border-[#222222] text-sm py-4 px-[25px] focus:ring-[#70BEFA] focus:ring-1 focus:outline-none rounded-[5px]"
           placeholder="John Doe"
         />
       </div>
@@ -70,7 +70,7 @@ export const ContactForm = () => {
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="text-white border-1 border-[#222222] py-4 px-[25px] focus:ring-[#70BEFA] focus:ring-1 focus:outline-none rounded-[5px]"
+          className="text-white border-1 border-[#222222]  text-sm py-4 px-[25px] focus:ring-[#70BEFA] focus:ring-1 focus:outline-none rounded-[5px]"
           placeholder="john@example.com"
         />
       </div>
@@ -83,7 +83,7 @@ export const ContactForm = () => {
           type="number"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
-          className="text-white border-1 border-[#222222] py-4 px-[25px] focus:ring-[#70BEFA] focus:ring-1 focus:outline-none rounded-[5px]"
+          className="text-white border-1 border-[#222222]  text-sm py-4 px-[25px] focus:ring-[#70BEFA] focus:ring-1 focus:outline-none rounded-[5px]"
           placeholder="+1 (773) 343 9223"
         />
       </div>
@@ -95,7 +95,7 @@ export const ContactForm = () => {
         <textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="text-white border-1 border-[#222222] h-24 py-4 px-[25px] focus:ring-[#70BEFA] focus:ring-1 focus:outline-none rounded-[5px]"
+          className="text-white border-1 border-[#222222]  text-sm h-24 py-4 px-[25px] focus:ring-[#70BEFA] focus:ring-1 focus:outline-none rounded-[5px]"
           placeholder="Hi! I'm reaching out for..."
         />
       </div>

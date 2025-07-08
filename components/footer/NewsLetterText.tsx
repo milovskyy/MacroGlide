@@ -6,7 +6,7 @@ export const NewsLetterText = () => {
           Be the First to Get Access
         </span>
       </h3>
-      <p className="text-[#9C9C9C] text-sm pr-10">
+      <p className="text-[#9C9C9C] text-sm ">
         {`To ensure a smooth experience during our early rollout, we’re limiting
         the number of users who can join at launch. The waitlist exists to give
         early access to those who are genuinely excited to be part of something

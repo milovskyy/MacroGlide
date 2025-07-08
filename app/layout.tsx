@@ -1,16 +1,12 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import { MainHeader } from '@/components/welcome/MainHeader'
+import CursorFollower from '@/components/CursorFollower'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
   subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  variable: '--font-inter',
 })
 
 export const metadata: Metadata = {
@@ -24,11 +20,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[1920px] relative mx-auto px-4 bg-[#0A0A0A]`}
+        className={`${inter.variable} font-sans antialiased max-w-[1920px] relative mx-auto px-4 bg-[#0A0A0A]`}
       >
         <MainHeader />
+        <CursorFollower />
         {children}
       </body>
     </html>

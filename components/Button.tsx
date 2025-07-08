@@ -19,7 +19,8 @@ export const Button = ({
       onClick={onClick}
       className={cn(
         'bg-[#161616] h-10 w-[150px] rounded-[10px] text-sm border-1 border-[#222222] button-wrapper cursor-pointer',
-        className
+        className,
+        arrow && 'w-[170px]'
       )}
     >
       <div className="button-content flex items-center justify-center text-sm">

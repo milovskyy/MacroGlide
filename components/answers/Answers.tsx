@@ -3,7 +3,10 @@ import { AnswersBlock } from './AnswersBlock'
 
 export const Answers = () => {
   return (
-    <section className="flex flex-col justify-center items-center gap-[25px]">
+    <section
+      id="faq"
+      className="flex flex-col justify-center items-center gap-[25px]"
+    >
       <h2>
         <TextGradient label="Answers" className="text-[92px]" />
       </h2>
